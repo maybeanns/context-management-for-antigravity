@@ -1,0 +1,81 @@
+{
+  "version": "2.3.0",
+  "generated": "2025-01-01T00:00:00Z",
+  "skills": {
+    "context-fundamentals": {
+      "mechanisms": ["mech-attention-u-curve", "mech-attention-sink"],
+      "claims": ["claim-context-degradation-lost-middle-ruler"],
+      "references": ["skills/context-fundamentals/references/attention-mechanics.md"]
+    },
+    "context-degradation": {
+      "mechanisms": ["mech-attention-u-curve", "mech-distraction-step-function", "mech-poisoning-cascade"],
+      "claims": ["claim-context-degradation-lost-middle-ruler", "claim-distraction-single-document"],
+      "references": ["skills/context-degradation/references/degradation-patterns.md"]
+    },
+    "context-compression": {
+      "mechanisms": ["mech-compression-fidelity-tradeoff"],
+      "claims": [],
+      "references": ["skills/context-compression/references/compression-strategies.md"]
+    },
+    "multi-agent-patterns": {
+      "mechanisms": ["mech-telephone-game"],
+      "claims": ["claim-multi-agent-token-multiplier", "claim-evaluation-browsecomp-variance"],
+      "references": ["skills/multi-agent-patterns/references/coordination-protocols.md"]
+    },
+    "memory-systems": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/memory-systems/references/memory-architectures.md"]
+    },
+    "tool-design": {
+      "mechanisms": ["mech-tool-schema-inflation", "mech-consolidation-principle"],
+      "claims": ["claim-tool-design-vercel-d0-reduction"],
+      "references": ["skills/tool-design/references/tool-contracts.md"]
+    },
+    "filesystem-context": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/filesystem-context/references/filesystem-patterns.md"]
+    },
+    "hosted-agents": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/hosted-agents/references/sandbox-architecture.md"]
+    },
+    "context-optimization": {
+      "mechanisms": ["mech-prefix-caching", "mech-observation-masking", "mech-tool-schema-inflation"],
+      "claims": [],
+      "references": ["skills/context-optimization/references/optimization-techniques.md"]
+    },
+    "latent-briefing": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/latent-briefing/references/kv-cache-compaction.md"]
+    },
+    "evaluation": {
+      "mechanisms": [],
+      "claims": ["claim-evaluation-browsecomp-variance"],
+      "references": ["skills/evaluation/references/evaluation-frameworks.md"]
+    },
+    "advanced-evaluation": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/advanced-evaluation/references/llm-as-judge.md"]
+    },
+    "harness-engineering": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/harness-engineering/references/harness-patterns.md"]
+    },
+    "project-development": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/project-development/references/pipeline-architecture.md"]
+    },
+    "bdi-mental-states": {
+      "mechanisms": [],
+      "claims": [],
+      "references": ["skills/bdi-mental-states/references/bdi-ontology.md"]
+    }
+  }
+}

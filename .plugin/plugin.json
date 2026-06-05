@@ -1,0 +1,38 @@
+{
+  "schema_version": "1.0.0",
+  "info": {
+    "title": "Agent Skills for Context Engineering",
+    "description": "Production context engineering skills for AI agent systems. Platform-agnostic collection of 15 skills covering context management, multi-agent patterns, evaluation, and harness engineering.",
+    "version": "2.3.0",
+    "author": "maybeanns",
+    "license": "MIT",
+    "homepage": "https://github.com/maybeanns/antigravity-agent-skills"
+  },
+  "skills_directory": "skills/",
+  "skill_entry_file": "SKILL.md",
+  "template": "template/SKILL.md",
+  "platforms": [
+    "antigravity-ide",
+    "claude-code",
+    "cursor",
+    "github-copilot",
+    "open-plugins"
+  ],
+  "skills": [
+    "context-fundamentals",
+    "context-degradation",
+    "context-compression",
+    "multi-agent-patterns",
+    "memory-systems",
+    "tool-design",
+    "filesystem-context",
+    "hosted-agents",
+    "context-optimization",
+    "latent-briefing",
+    "evaluation",
+    "advanced-evaluation",
+    "harness-engineering",
+    "project-development",
+    "bdi-mental-states"
+  ]
+}

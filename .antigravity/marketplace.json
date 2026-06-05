@@ -1,0 +1,128 @@
+{
+  "id": "antigravity-agent-skills-marketplace",
+  "name": "Agent Skills for Context Engineering",
+  "description": "Production context engineering skills for Google Antigravity IDE. 15 skills covering context fundamentals, degradation, compression, multi-agent patterns, memory systems, tool design, filesystem context, hosted agents, optimization, latent briefing, evaluation, advanced evaluation, harness engineering, project development, and BDI mental states.",
+  "version": "2.3.0",
+  "author": "maybeanns",
+  "license": "MIT",
+  "homepage": "https://github.com/maybeanns/antigravity-agent-skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maybeanns/antigravity-agent-skills.git"
+  },
+  "plugins": [
+    {
+      "id": "context-engineering",
+      "name": "Context Engineering Skills",
+      "description": "Complete collection of 15 context engineering skills",
+      "skills_dir": "skills/"
+    }
+  ],
+  "skills": [
+    {
+      "id": "context-fundamentals",
+      "name": "context-fundamentals",
+      "description": "Understand what context is, why it matters, and the anatomy of context in agent systems",
+      "path": "skills/context-fundamentals/SKILL.md",
+      "category": "foundational"
+    },
+    {
+      "id": "context-degradation",
+      "name": "context-degradation",
+      "description": "Recognize patterns of context failure: lost-in-middle, poisoning, distraction, and clash",
+      "path": "skills/context-degradation/SKILL.md",
+      "category": "foundational"
+    },
+    {
+      "id": "context-compression",
+      "name": "context-compression",
+      "description": "Design and evaluate compression strategies for long-running sessions",
+      "path": "skills/context-compression/SKILL.md",
+      "category": "foundational"
+    },
+    {
+      "id": "multi-agent-patterns",
+      "name": "multi-agent-patterns",
+      "description": "Master orchestrator, peer-to-peer, and hierarchical multi-agent architectures",
+      "path": "skills/multi-agent-patterns/SKILL.md",
+      "category": "architectural"
+    },
+    {
+      "id": "memory-systems",
+      "name": "memory-systems",
+      "description": "Design short-term, long-term, and graph-based memory architectures",
+      "path": "skills/memory-systems/SKILL.md",
+      "category": "architectural"
+    },
+    {
+      "id": "tool-design",
+      "name": "tool-design",
+      "description": "Build tools that agents can use effectively",
+      "path": "skills/tool-design/SKILL.md",
+      "category": "architectural"
+    },
+    {
+      "id": "filesystem-context",
+      "name": "filesystem-context",
+      "description": "Use filesystems for dynamic context discovery, tool output offloading, and plan persistence",
+      "path": "skills/filesystem-context/SKILL.md",
+      "category": "architectural"
+    },
+    {
+      "id": "hosted-agents",
+      "name": "hosted-agents",
+      "description": "Build background coding agents with sandboxed VMs, pre-built images, and multiplayer support",
+      "path": "skills/hosted-agents/SKILL.md",
+      "category": "architectural"
+    },
+    {
+      "id": "context-optimization",
+      "name": "context-optimization",
+      "description": "Apply compaction, masking, and caching strategies",
+      "path": "skills/context-optimization/SKILL.md",
+      "category": "operational"
+    },
+    {
+      "id": "latent-briefing",
+      "name": "latent-briefing",
+      "description": "Share task-relevant orchestrator state with workers via task-guided KV cache compaction",
+      "path": "skills/latent-briefing/SKILL.md",
+      "category": "operational"
+    },
+    {
+      "id": "evaluation",
+      "name": "evaluation",
+      "description": "Build evaluation frameworks for agent systems",
+      "path": "skills/evaluation/SKILL.md",
+      "category": "operational"
+    },
+    {
+      "id": "advanced-evaluation",
+      "name": "advanced-evaluation",
+      "description": "Master LLM-as-a-Judge techniques: direct scoring, pairwise comparison, rubric generation, and bias mitigation",
+      "path": "skills/advanced-evaluation/SKILL.md",
+      "category": "operational"
+    },
+    {
+      "id": "harness-engineering",
+      "name": "harness-engineering",
+      "description": "Design autonomous agent harnesses with locked metrics, durable logs, novelty gates, rollback, and human approval boundaries",
+      "path": "skills/harness-engineering/SKILL.md",
+      "category": "operational"
+    },
+    {
+      "id": "project-development",
+      "name": "project-development",
+      "description": "Design and build LLM projects from ideation through deployment",
+      "path": "skills/project-development/SKILL.md",
+      "category": "methodology"
+    },
+    {
+      "id": "bdi-mental-states",
+      "name": "bdi-mental-states",
+      "description": "Transform external RDF context into agent mental states using formal BDI ontology patterns",
+      "path": "skills/bdi-mental-states/SKILL.md",
+      "category": "cognitive"
+    }
+  ]
+}

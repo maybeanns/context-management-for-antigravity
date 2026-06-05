@@ -1,0 +1,15 @@
+{"id": "ac-001", "query": "How do I prevent lost-in-middle failures?", "expected_skill": "context-degradation", "not_skill": "context-fundamentals", "rationale": "Operational failure diagnosis, not conceptual explanation"}
+{"id": "ac-002", "query": "What is context in LLM systems?", "expected_skill": "context-fundamentals", "not_skill": "context-degradation", "rationale": "Conceptual question, not operational"}
+{"id": "ac-003", "query": "How do I compress conversation history for a handoff?", "expected_skill": "context-compression", "not_skill": "context-optimization", "rationale": "Compression strategy design, not token-level optimization"}
+{"id": "ac-004", "query": "How do I reduce token usage in my agent?", "expected_skill": "context-optimization", "not_skill": "context-compression", "rationale": "Token-level tactics, not session-level compression"}
+{"id": "ac-005", "query": "Should I use a supervisor or swarm pattern?", "expected_skill": "multi-agent-patterns", "not_skill": "project-development", "rationale": "Multi-agent topology decision, not project-level planning"}
+{"id": "ac-006", "query": "Should my project use LLMs at all?", "expected_skill": "project-development", "not_skill": "multi-agent-patterns", "rationale": "Task-model fit analysis, not topology"}
+{"id": "ac-007", "query": "How do I write a good tool description?", "expected_skill": "tool-design", "not_skill": "context-optimization", "rationale": "Individual tool interface, not trajectory optimization"}
+{"id": "ac-008", "query": "How do I store agent memory across sessions?", "expected_skill": "memory-systems", "not_skill": "filesystem-context", "rationale": "Memory architecture, not filesystem patterns"}
+{"id": "ac-009", "query": "How do I offload large tool outputs to files?", "expected_skill": "filesystem-context", "not_skill": "memory-systems", "rationale": "Filesystem offloading, not memory design"}
+{"id": "ac-010", "query": "How do I build an evaluation suite for my agent?", "expected_skill": "evaluation", "not_skill": "advanced-evaluation", "rationale": "Framework design, not LLM-as-judge specifics"}
+{"id": "ac-011", "query": "How do I implement LLM-as-a-judge scoring?", "expected_skill": "advanced-evaluation", "not_skill": "evaluation", "rationale": "LLM-as-judge technique, not framework design"}
+{"id": "ac-012", "query": "How do I prevent my agent from repeating failed approaches?", "expected_skill": "harness-engineering", "not_skill": "evaluation", "rationale": "Novelty gates in agent harness, not evaluation"}
+{"id": "ac-013", "query": "How do I design a warm sandbox pool?", "expected_skill": "hosted-agents", "not_skill": "multi-agent-patterns", "rationale": "Sandbox infrastructure, not coordination"}
+{"id": "ac-014", "query": "How do I share KV cache between orchestrator and workers?", "expected_skill": "latent-briefing", "not_skill": "multi-agent-patterns", "rationale": "KV cache compaction, not coordination protocol"}
+{"id": "ac-015", "query": "How do I model agent beliefs and intentions formally?", "expected_skill": "bdi-mental-states", "not_skill": "memory-systems", "rationale": "Cognitive architecture, not memory persistence"}

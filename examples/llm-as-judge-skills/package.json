@@ -1,0 +1,15 @@
+{
+  "name": "llm-as-judge-skills",
+  "version": "1.0.0",
+  "description": "Evaluation pipeline demonstrating advanced-evaluation and evaluation skills.",
+  "main": "dist/judge.js",
+  "scripts": {
+    "build": "node node_modules/typescript/lib/tsc.js",
+    "test": "vitest run src/judge.test.ts"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}

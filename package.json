@@ -1,0 +1,34 @@
+{
+  "name": "context-management-for-antigravity",
+  "version": "1.0.0",
+  "description": "Downloadable Agent Skills for context engineering, optimization, and compression in Google Antigravity IDE",
+  "main": "bin/cli.js",
+  "bin": {
+    "context-management-for-antigravity": "bin/cli.js"
+  },
+  "files": [
+    "skills",
+    "bin",
+    "SKILL.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "keywords": [
+    "antigravity",
+    "agent",
+    "skills",
+    "context-window",
+    "ai",
+    "context-engineering",
+    "context-management",
+    "context-optimization"
+  ],
+  "author": "maybeanns",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

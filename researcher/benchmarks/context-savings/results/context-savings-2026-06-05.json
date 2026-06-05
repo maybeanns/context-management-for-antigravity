@@ -1,0 +1,414 @@
+{
+  "timestamp": "2026-06-05T11:31:13Z",
+  "results": [
+    {
+      "name": "Observation Masking: Database Query",
+      "technique": "Observation Masking",
+      "skill": "context-optimization",
+      "tokens_before": 2222,
+      "tokens_after": 95,
+      "tokens_saved": 2127,
+      "savings_pct": 95.7,
+      "description": "Replace verbose 41-row database query results with a structured summary",
+      "details": {
+        "raw_output_chars": 7138,
+        "masked_output_chars": 355,
+        "rows_in_original": 41
+      }
+    },
+    {
+      "name": "Hierarchical Summarization: 20-Turn Conversation",
+      "technique": "Hierarchical Summarization",
+      "skill": "context-compression",
+      "tokens_before": 3777,
+      "tokens_after": 428,
+      "tokens_saved": 3349,
+      "savings_pct": 88.7,
+      "description": "Compress a 20-turn refactoring conversation with tool outputs into 4-tier summary",
+      "details": {
+        "total_turns": 23,
+        "tool_outputs": 12,
+        "tier_distribution": {
+          "tier4_oldest": "turns 0-5",
+          "tier3_history": "turns 6-12",
+          "tier2_recent": "turns 13-18",
+          "tier1_active": "turns 19+"
+        }
+      }
+    },
+    {
+      "name": "Tool Schema Optimization: 5-Tool Catalog",
+      "technique": "Tool Schema Optimization",
+      "skill": "tool-design",
+      "tokens_before": 1571,
+      "tokens_after": 292,
+      "tokens_saved": 1279,
+      "savings_pct": 81.4,
+      "description": "Replace JSON-serialized OpenAI tool schemas with plain-text descriptions",
+      "details": {
+        "tool_count": 5,
+        "json_chars": 5814,
+        "plaintext_chars": 1083,
+        "inflation_ratio": 5.37
+      }
+    },
+    {
+      "name": "Progressive Disclosure: 15-Skill Collection",
+      "technique": "Progressive Disclosure",
+      "skill": "context-fundamentals",
+      "tokens_before": 35803,
+      "tokens_after": 1789,
+      "tokens_saved": 34014,
+      "savings_pct": 95.0,
+      "description": "Load only skill names+descriptions at startup vs. full skill bodies + references",
+      "details": {
+        "skill_count": 30,
+        "per_skill_tokens": {
+          "advanced-evaluation": 1780,
+          "advanced-evaluation/refs": 380,
+          "bdi-mental-states": 1892,
+          "bdi-mental-states/refs": 518,
+          "context-compression": 2032,
+          "context-compression/refs": 419,
+          "context-degradation": 2380,
+          "context-degradation/refs": 463,
+          "context-fundamentals": 2768,
+          "context-fundamentals/refs": 1038,
+          "context-optimization": 1721,
+          "context-optimization/refs": 305,
+          "evaluation": 1892,
+          "evaluation/refs": 301,
+          "filesystem-context": 1741,
+          "filesystem-context/refs": 505,
+          "harness-engineering": 2035,
+          "harness-engineering/refs": 388,
+          "hosted-agents": 1528,
+          "hosted-agents/refs": 334,
+          "latent-briefing": 1562,
+          "latent-briefing/refs": 335,
+          "memory-systems": 2039,
+          "memory-systems/refs": 335,
+          "multi-agent-patterns": 2301,
+          "multi-agent-patterns/refs": 474,
+          "project-development": 1955,
+          "project-development/refs": 371,
+          "tool-design": 1743,
+          "tool-design/refs": 268
+        }
+      }
+    },
+    {
+      "name": "Format Optimization: Agent Responses",
+      "technique": "Format Optimization",
+      "skill": "context-optimization",
+      "tokens_before": 493,
+      "tokens_after": 136,
+      "tokens_saved": 357,
+      "savings_pct": 72.4,
+      "description": "Replace verbose agent confirmations with terse, information-dense equivalents",
+      "details": {
+        "response_count": 5,
+        "avg_verbose_tokens": 98,
+        "avg_terse_tokens": 27
+      }
+    },
+    {
+      "name": "Filesystem Offloading: 5 Tool Outputs",
+      "technique": "Filesystem Offloading",
+      "skill": "filesystem-context",
+      "tokens_before": 1250,
+      "tokens_after": 203,
+      "tokens_saved": 1047,
+      "savings_pct": 83.8,
+      "description": "Offload 5 diverse tool outputs (file read, grep, pip list, config, git log) to files",
+      "details": {
+        "tool_count": 5,
+        "per_tool_savings": {
+          "file_read src/models.py": {
+            "before": 386,
+            "after": 33
+          },
+          "grep_search 'rate_limit'": {
+            "before": 196,
+            "after": 45
+          },
+          "run_command pip list": {
+            "before": 174,
+            "after": 38
+          },
+          "file_read config/settings.py": {
+            "before": 326,
+            "after": 47
+          },
+          "run_command git log --oneline -20": {
+            "before": 116,
+            "after": 38
+          }
+        }
+      }
+    },
+    {
+      "name": "Context Partitioning: 25-Turn Session",
+      "technique": "Context Partitioning + Budget",
+      "skill": "context-optimization",
+      "tokens_before": 3682,
+      "tokens_after": 435,
+      "tokens_saved": 3247,
+      "savings_pct": 88.2,
+      "description": "Apply partition budgets to a 25-turn session with repeated system prompt and uncompacted history",
+      "details": {
+        "turns": 25,
+        "partitions": [
+          "system",
+          "tools",
+          "history",
+          "task"
+        ],
+        "system_dedup_savings": 92,
+        "history_compaction_savings": 3153
+      }
+    },
+    {
+      "name": "Handoff Summary: Session-to-Session Transfer",
+      "technique": "Handoff Summary",
+      "skill": "context-compression",
+      "tokens_before": 3777,
+      "tokens_after": 255,
+      "tokens_saved": 3522,
+      "savings_pct": 93.2,
+      "description": "Replace full 20-turn conversation with a structured handoff summary for the next session",
+      "details": {
+        "handoff_tokens": 255,
+        "target_tokens": 500,
+        "within_budget": true
+      }
+    },
+    {
+      "name": "Selective Retention: Debug Session",
+      "technique": "Selective Retention",
+      "skill": "context-compression",
+      "tokens_before": 904,
+      "tokens_after": 145,
+      "tokens_saved": 759,
+      "savings_pct": 84.0,
+      "description": "Retain only root cause, decision, and fix from a 12-step debugging session",
+      "details": {
+        "tool_calls_original": 8,
+        "reasoning_steps_original": 6,
+        "retained_items": [
+          "root_cause",
+          "evidence",
+          "fix",
+          "decision"
+        ]
+      }
+    },
+    {
+      "name": "Combined Pipeline: Full Session Optimization",
+      "technique": "Combined Pipeline",
+      "skill": "all context skills",
+      "tokens_before": 2936,
+      "tokens_after": 234,
+      "tokens_saved": 2702,
+      "savings_pct": 92.0,
+      "description": "Apply all techniques: dedup, schema optimization, retrieval filtering, history compression",
+      "details": {
+        "techniques_applied": [
+          "System prompt deduplication",
+          "Tool schema optimization (12\u21924 active, JSON\u2192plaintext)",
+          "Retrieved document filtering (10 sections\u21922 relevant)",
+          "Hierarchical history compression (15 turns\u2192summary)",
+          "Filesystem offloading (full docs\u2192reference)"
+        ]
+      }
+    },
+    {
+      "name": "Activation Boundary Precision",
+      "technique": "Boundary Analysis",
+      "skill": "all skills",
+      "tokens_before": 15,
+      "tokens_after": 15,
+      "tokens_saved": 0,
+      "savings_pct": 0.0,
+      "description": "15/15 skills have both 'When to Activate' and 'Do not activate' sections",
+      "details": {
+        "skills_checked": 15,
+        "has_activate_section": 15,
+        "has_deactivate_section": 15,
+        "has_both_sections": 15,
+        "completeness_pct": 100.0,
+        "cross_references": 132
+      }
+    },
+    {
+      "name": "Token Budget Compliance: 500-Line Limit",
+      "technique": "Token Consciousness",
+      "skill": "all skills",
+      "tokens_before": 15,
+      "tokens_after": 15,
+      "tokens_saved": 0,
+      "savings_pct": 0.0,
+      "description": "15/15 skills comply with the 500-line SKILL.md budget",
+      "details": {
+        "skills_checked": 15,
+        "compliant": 15,
+        "over_budget": [],
+        "per_skill_metrics": {
+          "advanced-evaluation": {
+            "lines": 136,
+            "tokens": 1780
+          },
+          "bdi-mental-states": {
+            "lines": 154,
+            "tokens": 1892
+          },
+          "context-compression": {
+            "lines": 131,
+            "tokens": 2032
+          },
+          "context-degradation": {
+            "lines": 86,
+            "tokens": 2380
+          },
+          "context-fundamentals": {
+            "lines": 108,
+            "tokens": 2768
+          },
+          "context-optimization": {
+            "lines": 115,
+            "tokens": 1721
+          },
+          "evaluation": {
+            "lines": 139,
+            "tokens": 1892
+          },
+          "filesystem-context": {
+            "lines": 144,
+            "tokens": 1741
+          },
+          "harness-engineering": {
+            "lines": 172,
+            "tokens": 2035
+          },
+          "hosted-agents": {
+            "lines": 109,
+            "tokens": 1528
+          },
+          "latent-briefing": {
+            "lines": 88,
+            "tokens": 1562
+          },
+          "memory-systems": {
+            "lines": 141,
+            "tokens": 2039
+          },
+          "multi-agent-patterns": {
+            "lines": 127,
+            "tokens": 2301
+          },
+          "project-development": {
+            "lines": 135,
+            "tokens": 1955
+          },
+          "tool-design": {
+            "lines": 100,
+            "tokens": 1743
+          }
+        }
+      }
+    },
+    {
+      "name": "Description Routing Signal Quality",
+      "technique": "Routing Signal Analysis",
+      "skill": "all skills",
+      "tokens_before": 75,
+      "tokens_after": 60,
+      "tokens_saved": 15,
+      "savings_pct": 20.0,
+      "description": "Average routing signal quality: 4.0/5.0 across 15 skills",
+      "details": {
+        "skills_analyzed": 15,
+        "total_score": 60,
+        "max_possible": 75,
+        "average_score": 4.0,
+        "per_skill_scores": {
+          "advanced-evaluation": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 342
+          },
+          "bdi-mental-states": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 437
+          },
+          "context-compression": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 387
+          },
+          "context-degradation": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 427
+          },
+          "context-fundamentals": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 690
+          },
+          "context-optimization": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 411
+          },
+          "evaluation": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 365
+          },
+          "filesystem-context": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 409
+          },
+          "harness-engineering": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 400
+          },
+          "hosted-agents": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 404
+          },
+          "latent-briefing": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 387
+          },
+          "memory-systems": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 382
+          },
+          "multi-agent-patterns": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 415
+          },
+          "project-development": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 364
+          },
+          "tool-design": {
+            "score": 4,
+            "max": 5,
+            "desc_length": 473
+          }
+        }
+      }
+    }
+  ]
+}
