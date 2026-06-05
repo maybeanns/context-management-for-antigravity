@@ -267,7 +267,7 @@ This repository is cited in academic research as foundational work on static ski
 
 > "While static skills are well-recognized [Anthropic, 2025b; Muratcan Koylan, 2025], MCE is among the first to dynamically evolve them, bridging manual skill engineering and autonomous self-improvement."
 >
-> — *Meta Context Engineering via Agentic Skill Evolution*, Peking University State Key Laboratory of General Artificial Intelligence (2025)
+* *Meta Context Engineering via Agentic Skill Evolution*, Peking University State Key Laboratory of General Artificial Intelligence (2025)
 
 * *Agent Harness Engineering: A Survey*, CMU, Yale, JHU, NEU, Tulane, UAB, OSU, Virginia Tech, and Amazon (2026)
 
@@ -279,4 +279,4 @@ This project is built upon the original reference implementation:
 
 ## License
 
-[MIT](LICENSE) — © 2025 maybeanns
+[MIT](LICENSE) — © 2026 maybeanns
