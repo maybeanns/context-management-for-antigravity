@@ -1,4 +1,4 @@
-# Agent Skills for Context Engineering
+# Context Management for Antigravity
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Skills: 15](https://img.shields.io/badge/Skills-15-brightgreen.svg)](#skills-overview)
